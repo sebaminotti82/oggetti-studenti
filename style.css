@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;padding: 0; margin: 0;
+}
+body{
+    position: relative;
+}
+.box {
+    width: 400px;
+    height: auto;
+    border: 1px solid #4d4d4d;
+    border-radius: 10px;
+    margin: 5vh auto;
+    text-align: center;
+    background-color: rgb(64, 83, 248);
+}
+.box ul li, .box h5 {
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+.box h5 {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.iscrizione{
+    width: 400px;
+    height: auto;
+    border: 1px solid #4d4d4d;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(64, 83, 248);
+}
+.iscrizione input {
+    width: 80%;
+    height: 4vh;
+    margin-top: 3vh;
+    margin-left: 10%;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #4d4d4d;
+    text-align: center;
+    
+}
+.iscrizione h5{
+    margin-top: 2vh;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+input::-webkit-input-placeholder{
+    color: rgb(0, 153, 255);
+}
+input::placeholder{
+    text-align: center;
+    padding: 5px;
+}
+#bottone {
+    width: 15vw;
+    height: 5vh;
+    box-shadow: 0PX 0PX 2PX gray;
+    outline: none;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 2vh;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    border: 1px solid gray;
+}
+#bottone:hover{
+    box-shadow: 0px 0px 2px 2px chartreuse;
+}
