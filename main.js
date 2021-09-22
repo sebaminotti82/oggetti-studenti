@@ -80,7 +80,8 @@ for( var i = 0; i < studenti.length; i++){
 }
 
 
-$('#bottone').click(function(){
+
+$('#bottone').one('click', function(){
     //customizzo il form per farlo sparire una volta che lo studente effettua la registrazione
   nuovoStudente = {
       'nome':'',
@@ -142,10 +143,19 @@ console.log(nuovoStudente);
     location.reload()
    }
 
+
+
+
    setTimeout(() => {
-    alert('congratulazioni ti sei registrato con successo')
-   location.reload()
-}, 800);
+    alert('congratulazioni ti sei registrato con successo , vuoi effettuare una nuova registrazione ?')
+    var risposta = prompt('')
+    if(risposta=='si'){
+      location.reload()
+    }else {
+      window.close()
+    }
+   
+}, 4000);
     
 })
 
